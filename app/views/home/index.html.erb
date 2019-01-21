@@ -1,0 +1,8 @@
+<% @posts.each do |p| %>
+    <%= p.post_name%><br>
+   <a href="<%=("/home/show" + p.id.to_s )%>"
+   <%= p.post_title%>
+   </a> <br> 
+
+<% end %>
+<a href ="/home/add" ><button> NEW</button> </a>
